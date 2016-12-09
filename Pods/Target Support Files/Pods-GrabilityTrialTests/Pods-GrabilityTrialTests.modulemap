@@ -1,0 +1,6 @@
+framework module Pods_GrabilityTrialTests {
+  umbrella header "Pods-GrabilityTrialTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
