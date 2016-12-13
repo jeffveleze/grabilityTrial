@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C459C1D1E004C9C0016EEFF /* MainIPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */; };
+		4C459C1E1E004C9C0016EEFF /* MainIPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */; };
+		4C459C1F1E004C9C0016EEFF /* MainIPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */; };
+		4C459C211E0056DD0016EEFF /* CategoriesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C459C201E0056DD0016EEFF /* CategoriesCollectionViewController.swift */; };
+		4C459C221E0056DD0016EEFF /* CategoriesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C459C201E0056DD0016EEFF /* CategoriesCollectionViewController.swift */; };
+		4C459C231E0056DD0016EEFF /* CategoriesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C459C201E0056DD0016EEFF /* CategoriesCollectionViewController.swift */; };
+		4C459C251E0058BA0016EEFF /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C459C241E0058BA0016EEFF /* CategoriesCollectionViewCell.swift */; };
+		4C459C261E0058BA0016EEFF /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C459C241E0058BA0016EEFF /* CategoriesCollectionViewCell.swift */; };
+		4C459C271E0058BA0016EEFF /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C459C241E0058BA0016EEFF /* CategoriesCollectionViewCell.swift */; };
+		4C459C2F1E0096FF0016EEFF /* AppsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C459C2E1E0096FF0016EEFF /* AppsTableViewController.swift */; };
+		4C459C301E0096FF0016EEFF /* AppsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C459C2E1E0096FF0016EEFF /* AppsTableViewController.swift */; };
+		4C459C311E0096FF0016EEFF /* AppsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C459C2E1E0096FF0016EEFF /* AppsTableViewController.swift */; };
+		4C459C371E009ADD0016EEFF /* AppsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C459C361E009ADD0016EEFF /* AppsCollectionViewController.swift */; };
+		4C459C381E009ADD0016EEFF /* AppsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C459C361E009ADD0016EEFF /* AppsCollectionViewController.swift */; };
+		4C459C391E009ADD0016EEFF /* AppsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C459C361E009ADD0016EEFF /* AppsCollectionViewController.swift */; };
 		4C8EFBB31DFB006400CA61A0 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFBB21DFB006400CA61A0 /* CategoriesTableViewController.swift */; };
 		4C8EFBB41DFB006400CA61A0 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFBB21DFB006400CA61A0 /* CategoriesTableViewController.swift */; };
 		4C8EFBB51DFB006400CA61A0 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFBB21DFB006400CA61A0 /* CategoriesTableViewController.swift */; };
@@ -20,6 +35,9 @@
 		4CAB07241DFA24CA00E445E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB07221DFA24CA00E445E7 /* LaunchScreen.storyboard */; };
 		4CAB072F1DFA24CA00E445E7 /* GrabilityTrialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB072E1DFA24CA00E445E7 /* GrabilityTrialTests.swift */; };
 		4CAB073A1DFA24CA00E445E7 /* GrabilityTrialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB07391DFA24CA00E445E7 /* GrabilityTrialUITests.swift */; };
+		4CCCD97E1DFF03990030357F /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCD97D1DFF03990030357F /* CategoriesTableViewCell.swift */; };
+		4CCCD97F1DFF03990030357F /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCD97D1DFF03990030357F /* CategoriesTableViewCell.swift */; };
+		4CCCD9801DFF03990030357F /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCD97D1DFF03990030357F /* CategoriesTableViewCell.swift */; };
 		5FD304B41C25D4F5ED47620D /* Pods_GrabilityTrialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98408E7B1EC6ADF065169C75 /* Pods_GrabilityTrialUITests.framework */; };
 		78D6DE914F20DDBBA78759F1 /* Pods_GrabilityTrial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BED0C1DA72F59909F4B4CA /* Pods_GrabilityTrial.framework */; };
 		E6B42033D1B8764E3B023A0E /* Pods_GrabilityTrialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD4712C8707CD7AACFE3C31 /* Pods_GrabilityTrialTests.framework */; };
@@ -48,6 +66,11 @@
 		1C50A20234A0BF20FE70BBA2 /* Pods-GrabilityTrialUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabilityTrialUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrabilityTrialUITests/Pods-GrabilityTrialUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2CD4712C8707CD7AACFE3C31 /* Pods_GrabilityTrialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrabilityTrialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2D02186537ED7DE7559FEA /* Pods-GrabilityTrial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabilityTrial.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrabilityTrial/Pods-GrabilityTrial.release.xcconfig"; sourceTree = "<group>"; };
+		4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainIPad.storyboard; sourceTree = "<group>"; };
+		4C459C201E0056DD0016EEFF /* CategoriesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewController.swift; sourceTree = "<group>"; };
+		4C459C241E0058BA0016EEFF /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		4C459C2E1E0096FF0016EEFF /* AppsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsTableViewController.swift; sourceTree = "<group>"; };
+		4C459C361E009ADD0016EEFF /* AppsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsCollectionViewController.swift; sourceTree = "<group>"; };
 		4C8EFBB21DFB006400CA61A0 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesTableViewController.swift; path = ../CategoriesTableViewController.swift; sourceTree = "<group>"; };
 		4C8EFBBA1DFB03AA00CA61A0 /* NetworkRequestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestHelper.swift; sourceTree = "<group>"; };
 		4CAB07131DFA24C900E445E7 /* GrabilityTrial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrabilityTrial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +86,7 @@
 		4CAB07351DFA24CA00E445E7 /* GrabilityTrialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrabilityTrialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CAB07391DFA24CA00E445E7 /* GrabilityTrialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrabilityTrialUITests.swift; sourceTree = "<group>"; };
 		4CAB073B1DFA24CA00E445E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CCCD97D1DFF03990030357F /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesTableViewCell.swift; path = ../CategoriesTableViewCell.swift; sourceTree = "<group>"; };
 		6CEDD031C4575153066D69DB /* Pods-GrabilityTrialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabilityTrialTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrabilityTrialTests/Pods-GrabilityTrialTests.release.xcconfig"; sourceTree = "<group>"; };
 		91BED0C1DA72F59909F4B4CA /* Pods_GrabilityTrial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrabilityTrial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98408E7B1EC6ADF065169C75 /* Pods_GrabilityTrialUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrabilityTrialUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +121,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C459C281E0058CF0016EEFF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4CCCD97D1DFF03990030357F /* CategoriesTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		4C459C291E0061490016EEFF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C8EFBB21DFB006400CA61A0 /* CategoriesTableViewController.swift */,
+				4C459C2E1E0096FF0016EEFF /* AppsTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4C459C2A1E0061630016EEFF /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				4C459C281E0058CF0016EEFF /* Cells */,
+				4C459C291E0061490016EEFF /* ViewControllers */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		4C459C2B1E00616A0016EEFF /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				4C459C2D1E0061820016EEFF /* Cells */,
+				4C459C2C1E0061790016EEFF /* ViewControllers */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		4C459C2C1E0061790016EEFF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C459C201E0056DD0016EEFF /* CategoriesCollectionViewController.swift */,
+				4C459C361E009ADD0016EEFF /* AppsCollectionViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4C459C2D1E0061820016EEFF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4C459C241E0058BA0016EEFF /* CategoriesCollectionViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		4CAB070A1DFA24C900E445E7 = {
 			isa = PBXGroup;
 			children = (
@@ -122,10 +198,12 @@
 		4CAB07151DFA24C900E445E7 /* GrabilityTrial */ = {
 			isa = PBXGroup;
 			children = (
+				4C459C2B1E00616A0016EEFF /* iPad */,
+				4C459C2A1E0061630016EEFF /* iPhone */,
 				4CAB07161DFA24C900E445E7 /* AppDelegate.swift */,
-				4C8EFBB21DFB006400CA61A0 /* CategoriesTableViewController.swift */,
 				4C8EFBBA1DFB03AA00CA61A0 /* NetworkRequestHelper.swift */,
 				4CAB071A1DFA24CA00E445E7 /* Main.storyboard */,
+				4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */,
 				4CAB07201DFA24CA00E445E7 /* Assets.xcassets */,
 				4CAB07221DFA24CA00E445E7 /* LaunchScreen.storyboard */,
 				4CAB07251DFA24CA00E445E7 /* Info.plist */,
@@ -295,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CAB07241DFA24CA00E445E7 /* LaunchScreen.storyboard in Resources */,
+				4C459C1D1E004C9C0016EEFF /* MainIPad.storyboard in Resources */,
 				4CAB07211DFA24CA00E445E7 /* Assets.xcassets in Resources */,
 				4CAB071C1DFA24CA00E445E7 /* Main.storyboard in Resources */,
 			);
@@ -304,6 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C459C1E1E004C9C0016EEFF /* MainIPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C459C1F1E004C9C0016EEFF /* MainIPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,9 +541,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C8EFBBB1DFB03AA00CA61A0 /* NetworkRequestHelper.swift in Sources */,
+				4C459C251E0058BA0016EEFF /* CategoriesCollectionViewCell.swift in Sources */,
 				4CAB071F1DFA24CA00E445E7 /* GrabilityTrial.xcdatamodeld in Sources */,
+				4C459C2F1E0096FF0016EEFF /* AppsTableViewController.swift in Sources */,
+				4C459C371E009ADD0016EEFF /* AppsCollectionViewController.swift in Sources */,
 				4CAB07171DFA24C900E445E7 /* AppDelegate.swift in Sources */,
 				4C8EFBB31DFB006400CA61A0 /* CategoriesTableViewController.swift in Sources */,
+				4C459C211E0056DD0016EEFF /* CategoriesCollectionViewController.swift in Sources */,
+				4CCCD97E1DFF03990030357F /* CategoriesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +556,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C459C261E0058BA0016EEFF /* CategoriesCollectionViewCell.swift in Sources */,
+				4C459C301E0096FF0016EEFF /* AppsTableViewController.swift in Sources */,
 				4CAB072F1DFA24CA00E445E7 /* GrabilityTrialTests.swift in Sources */,
+				4CCCD97F1DFF03990030357F /* CategoriesTableViewCell.swift in Sources */,
+				4C459C381E009ADD0016EEFF /* AppsCollectionViewController.swift in Sources */,
+				4C459C221E0056DD0016EEFF /* CategoriesCollectionViewController.swift in Sources */,
 				4C8EFBB41DFB006400CA61A0 /* CategoriesTableViewController.swift in Sources */,
 				4C8EFBBC1DFB03AA00CA61A0 /* NetworkRequestHelper.swift in Sources */,
 			);
@@ -480,7 +571,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C459C271E0058BA0016EEFF /* CategoriesCollectionViewCell.swift in Sources */,
+				4C459C311E0096FF0016EEFF /* AppsTableViewController.swift in Sources */,
 				4CAB073A1DFA24CA00E445E7 /* GrabilityTrialUITests.swift in Sources */,
+				4CCCD9801DFF03990030357F /* CategoriesTableViewCell.swift in Sources */,
+				4C459C391E009ADD0016EEFF /* AppsCollectionViewController.swift in Sources */,
+				4C459C231E0056DD0016EEFF /* CategoriesCollectionViewController.swift in Sources */,
 				4C8EFBB51DFB006400CA61A0 /* CategoriesTableViewController.swift in Sources */,
 				4C8EFBBD1DFB03AA00CA61A0 /* NetworkRequestHelper.swift in Sources */,
 			);
@@ -622,10 +718,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W373342TBY;
 				INFOPLIST_FILE = GrabilityTrial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jeff.GrabilityTrial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -637,10 +735,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W373342TBY;
 				INFOPLIST_FILE = GrabilityTrial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jeff.GrabilityTrial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

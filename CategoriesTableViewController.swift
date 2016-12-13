@@ -9,15 +9,18 @@
 import UIKit
 
 class CategoriesTableViewController: UITableViewController, DataSyncronizedProtocol {
-
+    
+    var activityIndicator = UIActivityIndicatorView()
     var networkHelper = NetworkRequestHelper()
+    var categories = Array<String>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.networkHelper.delegate = self;
-        networkHelper.syncData()
-        
+        self.networkHelper.syncData()
+        self.launcActivityIndicator()
+      
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -30,32 +33,82 @@ class CategoriesTableViewController: UITableViewController, DataSyncronizedProto
         // Dispose of any resources that can be recreated.
     }
     
+    func launcActivityIndicator(){
+        self.activityIndicator.center = self.view.center
+        self.activityIndicator.hidesWhenStopped = true
+        self.activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        self.activityIndicator.tintColor = UIColor.green
+        self.view.addSubview(self.activityIndicator)
+        disableViewElements()
+        
+        self.activityIndicator.startAnimating()
+    }
+    
+    func hideActivityIndicator(){
+        self.activityIndicator.stopAnimating()
+        self.enableViewElements()
+    }
+    
+    func enableViewElements(){
+        self.view.endEditing(false)
+        self.view.isUserInteractionEnabled = true
+        self.navigationController?.view.isUserInteractionEnabled = true
+    }
+    
+    func disableViewElements(){
+        self.view.endEditing(true)
+        self.view.isUserInteractionEnabled = false
+        self.navigationController?.view.isUserInteractionEnabled = false
+    }
+    
     func dataSyncronized(){
-        print(self.networkHelper.getCategories());
+        loadViewData()
+        hideActivityIndicator()
+    }
+    
+    func loadViewData(){
+        self.categories = self.networkHelper.getCategories()
+        self.tableView.reloadData()
+
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.categories.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        
+        let cellIdentifier = "CategoriesTableViewCell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CategoriesTableViewCell
+        let category = self.categories[indexPath.row]
+        cell.categoryName.text = category
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        
+        let categorySelected = self.categories[indexPath.row]
+        self.performSegue(withIdentifier: "showApps", sender: categorySelected)
+        
+    }
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
+        let appsViewController = segue.destination as! AppsTableViewController
+        appsViewController.categorySelected = sender as! String
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -88,16 +141,6 @@ class CategoriesTableViewController: UITableViewController, DataSyncronizedProto
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.
         return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
     */
 

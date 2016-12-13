@@ -27,21 +27,16 @@ class NetworkRequestHelper: NSObject {
     
     func syncData() {
         
-        Alamofire.request(urlServices).responseJSON { response in
-            //print(response.request)  // original URL request
-            //print(response.response) // HTTP URL response
-            //print(response.data)     // server data
-            //print(response.result)   // result of response serialization
-            
-            if let JSON = response.result.value {
-                self.jsonResponse = JSON as! [String : Any]
-                self.delegate?.dataSyncronized()
-                //print("Json \(self.jsonResponse)")
-            } else {
-                print("Request Error")
+        Alamofire.request(urlServices)
+            .responseJSON { response in
+                if let JSON = response.result.value {
+                    self.jsonResponse = JSON as! [String : Any]
+                    self.delegate?.dataSyncronized()
+                    //print("Json \(self.jsonResponse)")
+                } else {
+                    print("Request Error")
+                }
             }
-            
-        }
     }
     
     func getCategories() -> Array<String> {
@@ -57,12 +52,14 @@ class NetworkRequestHelper: NSObject {
             let dictionary3 = dictionary2[attributes] as! NSDictionary
             let str = dictionary3[label]
             categories.insert(str as! String)
-
         }
         
         return Array(categories)
-        
     }
+    
+    
+    
+    
 
 }
 
