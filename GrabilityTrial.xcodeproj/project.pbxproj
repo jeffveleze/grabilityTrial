@@ -16,6 +16,12 @@
 		4C0F42E11E01D46A00757347 /* JsonInfoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F42E01E01D46A00757347 /* JsonInfoDTO.swift */; };
 		4C0F42E21E01D46A00757347 /* JsonInfoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F42E01E01D46A00757347 /* JsonInfoDTO.swift */; };
 		4C0F42E31E01D46A00757347 /* JsonInfoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F42E01E01D46A00757347 /* JsonInfoDTO.swift */; };
+		4C0F42E51E01EBE600757347 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F42E41E01EBE600757347 /* Entry.swift */; };
+		4C0F42E61E01EBE600757347 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F42E41E01EBE600757347 /* Entry.swift */; };
+		4C0F42E71E01EBE600757347 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F42E41E01EBE600757347 /* Entry.swift */; };
+		4C0F42E91E01EF3C00757347 /* LastKeyString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F42E81E01EF3C00757347 /* LastKeyString.swift */; };
+		4C0F42EA1E01EF3C00757347 /* LastKeyString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F42E81E01EF3C00757347 /* LastKeyString.swift */; };
+		4C0F42EB1E01EF3C00757347 /* LastKeyString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F42E81E01EF3C00757347 /* LastKeyString.swift */; };
 		4C459C1D1E004C9C0016EEFF /* MainIPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */; };
 		4C459C1E1E004C9C0016EEFF /* MainIPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */; };
 		4C459C1F1E004C9C0016EEFF /* MainIPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */; };
@@ -78,6 +84,8 @@
 		4C0F42D41E018B2C00757347 /* AppsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsTableViewCell.swift; sourceTree = "<group>"; };
 		4C0F42D81E01960C00757347 /* AppsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsCollectionViewCell.swift; sourceTree = "<group>"; };
 		4C0F42E01E01D46A00757347 /* JsonInfoDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonInfoDTO.swift; sourceTree = "<group>"; };
+		4C0F42E41E01EBE600757347 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		4C0F42E81E01EF3C00757347 /* LastKeyString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastKeyString.swift; sourceTree = "<group>"; };
 		4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainIPad.storyboard; sourceTree = "<group>"; };
 		4C459C201E0056DD0016EEFF /* CategoriesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewController.swift; sourceTree = "<group>"; };
 		4C459C241E0058BA0016EEFF /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -217,6 +225,8 @@
 				4CAB07161DFA24C900E445E7 /* AppDelegate.swift */,
 				4C8EFBBA1DFB03AA00CA61A0 /* NetworkRequestHelper.swift */,
 				4C0F42E01E01D46A00757347 /* JsonInfoDTO.swift */,
+				4C0F42E41E01EBE600757347 /* Entry.swift */,
+				4C0F42E81E01EF3C00757347 /* LastKeyString.swift */,
 				4CAB071A1DFA24CA00E445E7 /* Main.storyboard */,
 				4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */,
 				4CAB07201DFA24CA00E445E7 /* Assets.xcassets */,
@@ -557,7 +567,9 @@
 			files = (
 				4C8EFBBB1DFB03AA00CA61A0 /* NetworkRequestHelper.swift in Sources */,
 				4C0F42D91E01960C00757347 /* AppsCollectionViewCell.swift in Sources */,
+				4C0F42E51E01EBE600757347 /* Entry.swift in Sources */,
 				4C459C251E0058BA0016EEFF /* CategoriesCollectionViewCell.swift in Sources */,
+				4C0F42E91E01EF3C00757347 /* LastKeyString.swift in Sources */,
 				4CAB071F1DFA24CA00E445E7 /* GrabilityTrial.xcdatamodeld in Sources */,
 				4C459C2F1E0096FF0016EEFF /* AppsTableViewController.swift in Sources */,
 				4C459C371E009ADD0016EEFF /* AppsCollectionViewController.swift in Sources */,
@@ -574,6 +586,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C0F42E61E01EBE600757347 /* Entry.swift in Sources */,
 				4C459C261E0058BA0016EEFF /* CategoriesCollectionViewCell.swift in Sources */,
 				4C0F42D61E018B2C00757347 /* AppsTableViewCell.swift in Sources */,
 				4C459C301E0096FF0016EEFF /* AppsTableViewController.swift in Sources */,
@@ -583,6 +596,7 @@
 				4CCCD97F1DFF03990030357F /* CategoriesTableViewCell.swift in Sources */,
 				4C459C381E009ADD0016EEFF /* AppsCollectionViewController.swift in Sources */,
 				4C459C221E0056DD0016EEFF /* CategoriesCollectionViewController.swift in Sources */,
+				4C0F42EA1E01EF3C00757347 /* LastKeyString.swift in Sources */,
 				4C8EFBB41DFB006400CA61A0 /* CategoriesTableViewController.swift in Sources */,
 				4C8EFBBC1DFB03AA00CA61A0 /* NetworkRequestHelper.swift in Sources */,
 			);
@@ -592,6 +606,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C0F42E71E01EBE600757347 /* Entry.swift in Sources */,
 				4C459C271E0058BA0016EEFF /* CategoriesCollectionViewCell.swift in Sources */,
 				4C0F42D71E018B2C00757347 /* AppsTableViewCell.swift in Sources */,
 				4C459C311E0096FF0016EEFF /* AppsTableViewController.swift in Sources */,
@@ -601,6 +616,7 @@
 				4CCCD9801DFF03990030357F /* CategoriesTableViewCell.swift in Sources */,
 				4C459C391E009ADD0016EEFF /* AppsCollectionViewController.swift in Sources */,
 				4C459C231E0056DD0016EEFF /* CategoriesCollectionViewController.swift in Sources */,
+				4C0F42EB1E01EF3C00757347 /* LastKeyString.swift in Sources */,
 				4C8EFBB51DFB006400CA61A0 /* CategoriesTableViewController.swift in Sources */,
 				4C8EFBBD1DFB03AA00CA61A0 /* NetworkRequestHelper.swift in Sources */,
 			);
