@@ -67,7 +67,7 @@ class CategoriesTableViewController: UITableViewController, DataSyncronizedProto
     }
     
     func loadViewData(){
-        self.categories = self.networkHelper.getCategories()
+        self.categories = JsonInfoDTO.sharedJsonInfoDTO.getCategories()
         self.tableView.reloadData()
 
     }

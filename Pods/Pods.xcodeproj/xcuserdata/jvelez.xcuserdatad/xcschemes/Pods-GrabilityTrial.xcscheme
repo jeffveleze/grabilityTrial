@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "25ECFAAE61D50596354648B937CC7D50"
+               BlueprintIdentifier = "37575EE347CD6B0531A1ABD68E632ACD"
                BuildableName = "Pods_GrabilityTrial.framework"
                BlueprintName = "Pods-GrabilityTrial"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "25ECFAAE61D50596354648B937CC7D50"
+            BlueprintIdentifier = "37575EE347CD6B0531A1ABD68E632ACD"
             BuildableName = "Pods_GrabilityTrial.framework"
             BlueprintName = "Pods-GrabilityTrial"
             ReferencedContainer = "container:Pods.xcodeproj">

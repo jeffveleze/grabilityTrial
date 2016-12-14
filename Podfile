@@ -7,6 +7,9 @@ target 'GrabilityTrial' do
 
   # Pods for GrabilityTrial
   pod 'Alamofire', '~> 4.0'
+  pod 'ObjectMapper', '~> 2.0'
+  pod 'AlamofireObjectMapper', '~> 4.0'
+  
 
   target 'GrabilityTrialTests' do
     inherit! :search_paths

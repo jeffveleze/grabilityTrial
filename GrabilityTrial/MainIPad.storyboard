@@ -29,7 +29,7 @@
         <scene sceneID="VXk-xe-O1O">
             <objects>
                 <collectionViewController id="1HJ-co-GOP" customClass="CategoriesCollectionViewController" customModule="GrabilityTrial" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="htl-eG-rhb">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" id="htl-eG-rhb">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -94,7 +94,7 @@
         <scene sceneID="Dy8-pr-QSg">
             <objects>
                 <collectionViewController id="8nb-Pq-yZ3" customClass="AppsCollectionViewController" customModule="GrabilityTrial" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Tn6-CU-xH6">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" id="Tn6-CU-xH6">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -105,7 +105,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="G8W-Ny-C10">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AppsCollectionViewCell" id="G8W-Ny-C10" customClass="AppsCollectionViewCell" customModule="GrabilityTrial" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="194" height="179"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -175,6 +175,11 @@
                                     <constraint firstItem="WzL-Ie-2Nq" firstAttribute="height" secondItem="G8W-Ny-C10" secondAttribute="height" multiplier="0.3" id="ugl-Sl-H3S"/>
                                     <constraint firstAttribute="trailing" secondItem="4nT-V4-TKD" secondAttribute="trailing" id="z8E-Em-ph5"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="author" destination="a0G-1r-uLd" id="o4D-LY-jTw"/>
+                                    <outlet property="imageLogo" destination="7mv-Ko-2Q5" id="E8s-xs-33T"/>
+                                    <outlet property="title" destination="fsI-Mn-Xmc" id="6bR-7b-LQq"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

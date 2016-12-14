@@ -10,6 +10,8 @@ import UIKit
 
 class CategoriesCollectionViewController: UICollectionViewController, DataSyncronizedProtocol {
     
+    let itemsPerRow: CGFloat = 3
+    let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
     var activityIndicator = UIActivityIndicatorView()
     var networkHelper = NetworkRequestHelper()
     var categories = Array<String>()
@@ -67,7 +69,7 @@ class CategoriesCollectionViewController: UICollectionViewController, DataSyncro
     }
     
     func loadViewData(){
-        self.categories = self.networkHelper.getCategories()
+        self.categories = JsonInfoDTO.sharedJsonInfoDTO.getCategories()
         self.collectionView?.reloadData()
     }
     
@@ -99,6 +101,15 @@ class CategoriesCollectionViewController: UICollectionViewController, DataSyncro
         let categorySelected = self.categories[indexPath.item]
         self.performSegue(withIdentifier: "showApps", sender: categorySelected)
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,layout collectionViewLayout: UICollectionViewLayout,sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
+        let paddingSpace = sectionInsets.left * (self.itemsPerRow + 1)
+        let availableWidth = self.view.frame.width - paddingSpace
+        let widthPerItem = availableWidth / itemsPerRow
+        
+        return CGSize(width: widthPerItem, height: widthPerItem)
     }
     
     

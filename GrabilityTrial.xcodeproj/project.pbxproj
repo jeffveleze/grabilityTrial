@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C0F42D51E018B2C00757347 /* AppsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F42D41E018B2C00757347 /* AppsTableViewCell.swift */; };
+		4C0F42D61E018B2C00757347 /* AppsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F42D41E018B2C00757347 /* AppsTableViewCell.swift */; };
+		4C0F42D71E018B2C00757347 /* AppsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F42D41E018B2C00757347 /* AppsTableViewCell.swift */; };
+		4C0F42D91E01960C00757347 /* AppsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F42D81E01960C00757347 /* AppsCollectionViewCell.swift */; };
+		4C0F42DA1E01960C00757347 /* AppsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F42D81E01960C00757347 /* AppsCollectionViewCell.swift */; };
+		4C0F42DB1E01960C00757347 /* AppsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F42D81E01960C00757347 /* AppsCollectionViewCell.swift */; };
+		4C0F42E11E01D46A00757347 /* JsonInfoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F42E01E01D46A00757347 /* JsonInfoDTO.swift */; };
+		4C0F42E21E01D46A00757347 /* JsonInfoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F42E01E01D46A00757347 /* JsonInfoDTO.swift */; };
+		4C0F42E31E01D46A00757347 /* JsonInfoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F42E01E01D46A00757347 /* JsonInfoDTO.swift */; };
 		4C459C1D1E004C9C0016EEFF /* MainIPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */; };
 		4C459C1E1E004C9C0016EEFF /* MainIPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */; };
 		4C459C1F1E004C9C0016EEFF /* MainIPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */; };
@@ -66,6 +75,9 @@
 		1C50A20234A0BF20FE70BBA2 /* Pods-GrabilityTrialUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabilityTrialUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrabilityTrialUITests/Pods-GrabilityTrialUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2CD4712C8707CD7AACFE3C31 /* Pods_GrabilityTrialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrabilityTrialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2D02186537ED7DE7559FEA /* Pods-GrabilityTrial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabilityTrial.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrabilityTrial/Pods-GrabilityTrial.release.xcconfig"; sourceTree = "<group>"; };
+		4C0F42D41E018B2C00757347 /* AppsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsTableViewCell.swift; sourceTree = "<group>"; };
+		4C0F42D81E01960C00757347 /* AppsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsCollectionViewCell.swift; sourceTree = "<group>"; };
+		4C0F42E01E01D46A00757347 /* JsonInfoDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonInfoDTO.swift; sourceTree = "<group>"; };
 		4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainIPad.storyboard; sourceTree = "<group>"; };
 		4C459C201E0056DD0016EEFF /* CategoriesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewController.swift; sourceTree = "<group>"; };
 		4C459C241E0058BA0016EEFF /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -125,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				4CCCD97D1DFF03990030357F /* CategoriesTableViewCell.swift */,
+				4C0F42D41E018B2C00757347 /* AppsTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -169,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				4C459C241E0058BA0016EEFF /* CategoriesCollectionViewCell.swift */,
+				4C0F42D81E01960C00757347 /* AppsCollectionViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -202,6 +216,7 @@
 				4C459C2A1E0061630016EEFF /* iPhone */,
 				4CAB07161DFA24C900E445E7 /* AppDelegate.swift */,
 				4C8EFBBA1DFB03AA00CA61A0 /* NetworkRequestHelper.swift */,
+				4C0F42E01E01D46A00757347 /* JsonInfoDTO.swift */,
 				4CAB071A1DFA24CA00E445E7 /* Main.storyboard */,
 				4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */,
 				4CAB07201DFA24CA00E445E7 /* Assets.xcassets */,
@@ -541,6 +556,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C8EFBBB1DFB03AA00CA61A0 /* NetworkRequestHelper.swift in Sources */,
+				4C0F42D91E01960C00757347 /* AppsCollectionViewCell.swift in Sources */,
 				4C459C251E0058BA0016EEFF /* CategoriesCollectionViewCell.swift in Sources */,
 				4CAB071F1DFA24CA00E445E7 /* GrabilityTrial.xcdatamodeld in Sources */,
 				4C459C2F1E0096FF0016EEFF /* AppsTableViewController.swift in Sources */,
@@ -548,7 +564,9 @@
 				4CAB07171DFA24C900E445E7 /* AppDelegate.swift in Sources */,
 				4C8EFBB31DFB006400CA61A0 /* CategoriesTableViewController.swift in Sources */,
 				4C459C211E0056DD0016EEFF /* CategoriesCollectionViewController.swift in Sources */,
+				4C0F42E11E01D46A00757347 /* JsonInfoDTO.swift in Sources */,
 				4CCCD97E1DFF03990030357F /* CategoriesTableViewCell.swift in Sources */,
+				4C0F42D51E018B2C00757347 /* AppsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,8 +575,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C459C261E0058BA0016EEFF /* CategoriesCollectionViewCell.swift in Sources */,
+				4C0F42D61E018B2C00757347 /* AppsTableViewCell.swift in Sources */,
 				4C459C301E0096FF0016EEFF /* AppsTableViewController.swift in Sources */,
 				4CAB072F1DFA24CA00E445E7 /* GrabilityTrialTests.swift in Sources */,
+				4C0F42E21E01D46A00757347 /* JsonInfoDTO.swift in Sources */,
+				4C0F42DA1E01960C00757347 /* AppsCollectionViewCell.swift in Sources */,
 				4CCCD97F1DFF03990030357F /* CategoriesTableViewCell.swift in Sources */,
 				4C459C381E009ADD0016EEFF /* AppsCollectionViewController.swift in Sources */,
 				4C459C221E0056DD0016EEFF /* CategoriesCollectionViewController.swift in Sources */,
@@ -572,8 +593,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C459C271E0058BA0016EEFF /* CategoriesCollectionViewCell.swift in Sources */,
+				4C0F42D71E018B2C00757347 /* AppsTableViewCell.swift in Sources */,
 				4C459C311E0096FF0016EEFF /* AppsTableViewController.swift in Sources */,
 				4CAB073A1DFA24CA00E445E7 /* GrabilityTrialUITests.swift in Sources */,
+				4C0F42E31E01D46A00757347 /* JsonInfoDTO.swift in Sources */,
+				4C0F42DB1E01960C00757347 /* AppsCollectionViewCell.swift in Sources */,
 				4CCCD9801DFF03990030357F /* CategoriesTableViewCell.swift in Sources */,
 				4C459C391E009ADD0016EEFF /* AppsCollectionViewController.swift in Sources */,
 				4C459C231E0056DD0016EEFF /* CategoriesCollectionViewController.swift in Sources */,
