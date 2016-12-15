@@ -8,7 +8,6 @@
 
 import UIKit
 import Alamofire
-import ObjectMapper
 import AlamofireObjectMapper
 
 protocol DataSyncronizedProtocol {
@@ -22,39 +21,15 @@ class NetworkRequestHelper: NSObject {
     
     func syncData() {
         
-        /*
-        Alamofire.request(urlServices)
-            .responseJSON { response in
-                if let JSON = response.result.value {
-                    JsonInfoDTO.sharedJsonInfoDTO.jsonResponse = JSON as! [String : Any]
+        Alamofire.request(urlServices).responseObject { (response: DataResponse<JsonMap>) in
+            
+            if response.result.value != nil {
+                JsonInfoDTO.sharedJsonInfoDTO.jsonMap = response.result.value
                     self.delegate?.dataSyncronized()
-                } else {
-                    print("Request Error")
-                }
+            } else {
+                print("Request Error")
             }
-        */
- 
-        
-        var mappedJson: JsonMap = JsonMap.init()
-
-        
-        Alamofire.request(urlServices)
-            .responseJSON { response in
-                if let JSON = response.result.value {
-                    JsonInfoDTO.sharedJsonInfoDTO.jsonResponse = JSON as! [String : Any]
-                    self.delegate?.dataSyncronized()
-                    
-                    //mappedJson = Mapper<JsonMap>.map(JSON)
-                    //appList = Mapper<AppList>().map(valueJSON)!
-
-                    let weatherResponse = response.result.value
-                    print(weatherResponse as! NSDictionary)
-                } else {
-                    print("Request Error")
-                }
-
-            }
-        
+        }
     }
     
 

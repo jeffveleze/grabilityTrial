@@ -71,6 +71,7 @@ class CategoriesCollectionViewController: UICollectionViewController, DataSyncro
     func loadViewData(){
         self.categories = JsonInfoDTO.sharedJsonInfoDTO.getCategories()
         self.collectionView?.reloadData()
+        
     }
     
     // MARK: UICollectionViewDataSource
@@ -90,8 +91,9 @@ class CategoriesCollectionViewController: UICollectionViewController, DataSyncro
         
         let cellIdentifier = "CategoriesCollectionViewCell"
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! CategoriesCollectionViewCell
+        
         let category = self.categories[indexPath.row]
-        cell.categoryName.text = category        
+        cell.categoryName.text = category
         
         return cell
     }

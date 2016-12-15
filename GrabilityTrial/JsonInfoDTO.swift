@@ -29,17 +29,12 @@ class JsonInfoDTO: NSObject {
     
     func getCategories() -> Array<String> {
         
-        let dictionary0: NSDictionary = self.jsonResponse[feed] as! NSDictionary
-        let array0: NSArray = dictionary0[entry] as! NSArray
+        let entry = jsonMap?.feed?.entry
         var categories = Set<String>()
         
-        for index in 0...(array0.count-1) {
-            
-            let dictionary1 = array0[index] as! NSDictionary
-            let dictionary2 = dictionary1[category] as! NSDictionary
-            let dictionary3 = dictionary2[attributes] as! NSDictionary
-            let str = dictionary3[label]
-            categories.insert(str as! String)
+        for index in 0...((entry?.count)!-1){
+            let category = entry?[index].category?.attributes?.label
+            categories.insert(category!)
         }
         
         return Array(categories)

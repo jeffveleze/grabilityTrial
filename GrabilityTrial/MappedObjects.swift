@@ -28,7 +28,7 @@ class JsonMap:  Mappable{
 }
 class Feed: Mappable {
     
-    var entry : Entry?
+    var entry : [Entry]?
     var title : Label?
     var icon : Label?
 
@@ -46,7 +46,7 @@ class Feed: Mappable {
 class Entry: Mappable {
     
     var name : Label?
-    var image : Image?
+    var image : [Image]?
     var summary : Label?
     var artist : Artist?
     var category : Category?
