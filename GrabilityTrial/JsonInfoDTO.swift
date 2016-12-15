@@ -21,6 +21,8 @@ class JsonInfoDTO: NSObject {
     let label = "label"
 
     var jsonResponse = [String: Any]()
+    var jsonMap: JsonMap?
+
     
     //This prevents others from using the default '()' initializer for this class.
     private override init() {}
