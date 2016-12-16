@@ -40,25 +40,19 @@ class JsonInfoDTO: NSObject {
         return Array(categories)
     }
     
-    func getEntriesFor(categorySelected: String){
+    func getEntriesFor(categorySelected: String) -> Array<Entry>{
         
-        let dictionary0: NSDictionary = self.jsonResponse[feed] as! NSDictionary
-        let array0: NSArray = dictionary0[entry] as! NSArray
-        
-        for index in 0...(array0.count-1) {
-            
-            let dictionary1 = array0[index] as! NSDictionary
-            let dictionary2 = dictionary1[category] as! NSDictionary
-            let dictionary3 = dictionary2[attributes] as! NSDictionary
-            let str = dictionary3[label] as! String
-            if str == categorySelected {
-                
+        let entry = jsonMap?.feed?.entry
+        var entriesForCategory = Array<Entry>()
+
+        for index in 0...((entry?.count)!-1){
+            let category = entry?[index].category?.attributes?.label
+            if category == categorySelected {
+                entriesForCategory.append((entry?[index])!)
             }
         }
-
-
-
         
+        return entriesForCategory
     }
 
     

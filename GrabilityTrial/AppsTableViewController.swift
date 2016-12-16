@@ -11,24 +11,29 @@ import UIKit
 class AppsTableViewController: UITableViewController {
     
     var categorySelected = String()
+    var entries = Array<Entry>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("The category is: ", self.categorySelected)
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        self.entries = JsonInfoDTO.sharedJsonInfoDTO.getEntriesFor(categorySelected: self.categorySelected)
+
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -38,7 +43,7 @@ class AppsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 8
+        return self.entries.count
     }
 
     
@@ -46,10 +51,12 @@ class AppsTableViewController: UITableViewController {
         
         let cellIdentifier = "AppsTableViewCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier , for: indexPath) as! AppsTableViewCell
-        cell.title.text = "Título \(indexPath.row)"
-        cell.author.text = "Author \(indexPath.row)"
-
-        // Configure the cell...
+        let entry = self.entries[indexPath.row]
+        let title = entry.name?.label
+        let author = entry.artist?.label
+        //print(entry.image?[0].label)
+        cell.title.text = title
+        cell.author.text = author
 
         return cell
     }

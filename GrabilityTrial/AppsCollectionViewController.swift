@@ -14,6 +14,7 @@ class AppsCollectionViewController: UICollectionViewController {
     let itemsPerRow: CGFloat = 3
     let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
     var categorySelected = String()
+    var entries = Array<Entry>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,12 @@ class AppsCollectionViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        self.entries = JsonInfoDTO.sharedJsonInfoDTO.getEntriesFor(categorySelected: self.categorySelected)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,15 +58,18 @@ class AppsCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 10
+        return self.entries.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cellIdentifier = "AppsCollectionViewCell"
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! AppsCollectionViewCell
-        cell.title.text = "Título \(indexPath.row)"
-        cell.author.text = "Author \(indexPath.row)"
+        let entry = self.entries[indexPath.row]
+        let title = entry.name?.label
+        let author = entry.artist?.label
+        cell.title.text = title
+        cell.author.text = author
         
         return cell
     }

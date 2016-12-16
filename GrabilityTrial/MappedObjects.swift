@@ -66,7 +66,7 @@ class Entry: Mappable {
 
 class Image: Mappable {
     
-    var label : Label?
+    var label : String?
     var attributes : AttributesImage?
     
     required init?(map: Map) {
@@ -94,7 +94,7 @@ class AttributesImage: Mappable {
 
 class Artist: Mappable {
     
-    var label : Label?
+    var label : String?
     var attributes : AttributesArtist?
     
     required init?(map: Map) {
