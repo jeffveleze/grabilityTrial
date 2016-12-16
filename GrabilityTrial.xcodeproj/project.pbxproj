@@ -40,6 +40,9 @@
 		4C8EFBBB1DFB03AA00CA61A0 /* NetworkRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFBBA1DFB03AA00CA61A0 /* NetworkRequestHelper.swift */; };
 		4C8EFBBC1DFB03AA00CA61A0 /* NetworkRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFBBA1DFB03AA00CA61A0 /* NetworkRequestHelper.swift */; };
 		4C8EFBBD1DFB03AA00CA61A0 /* NetworkRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFBBA1DFB03AA00CA61A0 /* NetworkRequestHelper.swift */; };
+		4CA258CB1E04288700748D37 /* LocalDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA258CA1E04288700748D37 /* LocalDataHandler.swift */; };
+		4CA258CC1E04288700748D37 /* LocalDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA258CA1E04288700748D37 /* LocalDataHandler.swift */; };
+		4CA258CD1E04288700748D37 /* LocalDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA258CA1E04288700748D37 /* LocalDataHandler.swift */; };
 		4CAB07171DFA24C900E445E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB07161DFA24C900E445E7 /* AppDelegate.swift */; };
 		4CAB071C1DFA24CA00E445E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB071A1DFA24CA00E445E7 /* Main.storyboard */; };
 		4CAB071F1DFA24CA00E445E7 /* GrabilityTrial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB071D1DFA24CA00E445E7 /* GrabilityTrial.xcdatamodeld */; };
@@ -89,6 +92,7 @@
 		4C459C361E009ADD0016EEFF /* AppsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsCollectionViewController.swift; sourceTree = "<group>"; };
 		4C8EFBB21DFB006400CA61A0 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesTableViewController.swift; path = ../CategoriesTableViewController.swift; sourceTree = "<group>"; };
 		4C8EFBBA1DFB03AA00CA61A0 /* NetworkRequestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestHelper.swift; sourceTree = "<group>"; };
+		4CA258CA1E04288700748D37 /* LocalDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalDataHandler.swift; path = ../LocalDataHandler.swift; sourceTree = "<group>"; };
 		4CAB07131DFA24C900E445E7 /* GrabilityTrial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrabilityTrial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CAB07161DFA24C900E445E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CAB071B1DFA24CA00E445E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 				4C8EFBBA1DFB03AA00CA61A0 /* NetworkRequestHelper.swift */,
 				4C0F42E01E01D46A00757347 /* JsonInfoDTO.swift */,
 				4C0F42E41E01EBE600757347 /* MappedObjects.swift */,
+				4CA258CA1E04288700748D37 /* LocalDataHandler.swift */,
 				4CAB071A1DFA24CA00E445E7 /* Main.storyboard */,
 				4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */,
 				4CAB07201DFA24CA00E445E7 /* Assets.xcassets */,
@@ -571,6 +576,7 @@
 				4C8EFBB31DFB006400CA61A0 /* CategoriesTableViewController.swift in Sources */,
 				4C459C211E0056DD0016EEFF /* CategoriesCollectionViewController.swift in Sources */,
 				4C0F42E11E01D46A00757347 /* JsonInfoDTO.swift in Sources */,
+				4CA258CB1E04288700748D37 /* LocalDataHandler.swift in Sources */,
 				4CCCD97E1DFF03990030357F /* CategoriesTableViewCell.swift in Sources */,
 				4C0F42D51E018B2C00757347 /* AppsTableViewCell.swift in Sources */,
 			);
@@ -586,6 +592,7 @@
 				4C459C301E0096FF0016EEFF /* AppsTableViewController.swift in Sources */,
 				4CAB072F1DFA24CA00E445E7 /* GrabilityTrialTests.swift in Sources */,
 				4C0F42E21E01D46A00757347 /* JsonInfoDTO.swift in Sources */,
+				4CA258CC1E04288700748D37 /* LocalDataHandler.swift in Sources */,
 				4C0F42DA1E01960C00757347 /* AppsCollectionViewCell.swift in Sources */,
 				4CCCD97F1DFF03990030357F /* CategoriesTableViewCell.swift in Sources */,
 				4C459C381E009ADD0016EEFF /* AppsCollectionViewController.swift in Sources */,
@@ -605,6 +612,7 @@
 				4C459C311E0096FF0016EEFF /* AppsTableViewController.swift in Sources */,
 				4CAB073A1DFA24CA00E445E7 /* GrabilityTrialUITests.swift in Sources */,
 				4C0F42E31E01D46A00757347 /* JsonInfoDTO.swift in Sources */,
+				4CA258CD1E04288700748D37 /* LocalDataHandler.swift in Sources */,
 				4C0F42DB1E01960C00757347 /* AppsCollectionViewCell.swift in Sources */,
 				4CCCD9801DFF03990030357F /* CategoriesTableViewCell.swift in Sources */,
 				4C459C391E009ADD0016EEFF /* AppsCollectionViewController.swift in Sources */,
