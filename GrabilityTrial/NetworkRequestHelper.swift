@@ -42,14 +42,6 @@ class NetworkRequestHelper: NSObject {
                 self.delegate?.dataSyncronized()
             }
             
-            /*
-            if response.result.value != nil {
-                JsonInfoDTO.sharedJsonInfoDTO.jsonMap = response.result.value
-                self.dataSaver.saveFile(json: response.result.value!)
-                self.delegate?.dataSyncronized()
-            } else {
-                print("Request Error")
-            }*/
         }
     }
     

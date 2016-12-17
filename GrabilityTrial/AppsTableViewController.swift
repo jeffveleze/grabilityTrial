@@ -45,7 +45,6 @@ class AppsTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return self.entries.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -54,10 +53,11 @@ class AppsTableViewController: UITableViewController {
         let entry = self.entries[indexPath.row]
         let title = entry.name?.label
         let author = entry.artist?.label
-        //print(entry.image?[0].label)
+        let url = entry.image?[1].label
         cell.title.text = title
         cell.author.text = author
-
+        cell.imageLogo.downloadedFrom(link: url!)
+        
         return cell
     }
     

@@ -11,7 +11,7 @@ import UIKit
 
 class AppsCollectionViewController: UICollectionViewController {
     
-    let itemsPerRow: CGFloat = 3
+    let itemsPerRow: CGFloat = 2
     let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
     var categorySelected = String()
     var entries = Array<Entry>()
@@ -68,8 +68,10 @@ class AppsCollectionViewController: UICollectionViewController {
         let entry = self.entries[indexPath.row]
         let title = entry.name?.label
         let author = entry.artist?.label
+        let url = entry.image?[2].label
         cell.title.text = title
         cell.author.text = author
+        cell.imageLogo.downloadedFrom(link: url!)
         
         return cell
     }

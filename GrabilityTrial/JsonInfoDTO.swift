@@ -19,7 +19,7 @@ class JsonInfoDTO: NSObject {
     let category = "category"
     let attributes = "attributes"
     let label = "label"
-
+    
     var jsonResponse = [String: Any]()
     var jsonMap: JsonMap?
 
