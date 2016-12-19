@@ -19,8 +19,6 @@ class AppsCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("The category is: ", self.categorySelected)
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -37,16 +35,6 @@ class AppsCollectionViewController: UICollectionViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     // MARK: UICollectionViewDataSource
 
@@ -84,6 +72,21 @@ class AppsCollectionViewController: UICollectionViewController {
         
         return CGSize(width: widthPerItem, height: widthPerItem)
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+        
+        let entrySelected = self.entries[indexPath.row]
+        self.performSegue(withIdentifier: "showDetails", sender: entrySelected)
+    }
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let detailsViewController = segue.destination as! DetailsViewController
+        detailsViewController.entrySelected = sender as! Entry?
+    }
+
 
     // MARK: UICollectionViewDelegate
 

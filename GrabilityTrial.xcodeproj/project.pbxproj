@@ -54,6 +54,9 @@
 		4CAB07241DFA24CA00E445E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB07221DFA24CA00E445E7 /* LaunchScreen.storyboard */; };
 		4CAB072F1DFA24CA00E445E7 /* GrabilityTrialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB072E1DFA24CA00E445E7 /* GrabilityTrialTests.swift */; };
 		4CAB073A1DFA24CA00E445E7 /* GrabilityTrialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB07391DFA24CA00E445E7 /* GrabilityTrialUITests.swift */; };
+		4CBF5B381E082DDD0032A71C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF5B371E082DDD0032A71C /* DetailsViewController.swift */; };
+		4CBF5B391E082DDD0032A71C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF5B371E082DDD0032A71C /* DetailsViewController.swift */; };
+		4CBF5B3A1E082DDD0032A71C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF5B371E082DDD0032A71C /* DetailsViewController.swift */; };
 		4CCCD97E1DFF03990030357F /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCD97D1DFF03990030357F /* CategoriesTableViewCell.swift */; };
 		4CCCD97F1DFF03990030357F /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCD97D1DFF03990030357F /* CategoriesTableViewCell.swift */; };
 		4CCCD9801DFF03990030357F /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCD97D1DFF03990030357F /* CategoriesTableViewCell.swift */; };
@@ -112,6 +115,7 @@
 		4CAB07351DFA24CA00E445E7 /* GrabilityTrialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrabilityTrialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CAB07391DFA24CA00E445E7 /* GrabilityTrialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrabilityTrialUITests.swift; sourceTree = "<group>"; };
 		4CAB073B1DFA24CA00E445E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CBF5B371E082DDD0032A71C /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsViewController.swift; path = ../DetailsViewController.swift; sourceTree = "<group>"; };
 		4CCCD97D1DFF03990030357F /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesTableViewCell.swift; path = ../CategoriesTableViewCell.swift; sourceTree = "<group>"; };
 		6CEDD031C4575153066D69DB /* Pods-GrabilityTrialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabilityTrialTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrabilityTrialTests/Pods-GrabilityTrialTests.release.xcconfig"; sourceTree = "<group>"; };
 		91BED0C1DA72F59909F4B4CA /* Pods_GrabilityTrial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrabilityTrial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +239,7 @@
 				4C0F42E41E01EBE600757347 /* MappedObjects.swift */,
 				4CA258CA1E04288700748D37 /* LocalDataHandler.swift */,
 				3DF06F751E05C20100E57022 /* Extensions.swift */,
+				4CBF5B371E082DDD0032A71C /* DetailsViewController.swift */,
 				4CAB071A1DFA24CA00E445E7 /* Main.storyboard */,
 				4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */,
 				4CAB07201DFA24CA00E445E7 /* Assets.xcassets */,
@@ -585,6 +590,7 @@
 				4C8EFBB31DFB006400CA61A0 /* CategoriesTableViewController.swift in Sources */,
 				4C459C211E0056DD0016EEFF /* CategoriesCollectionViewController.swift in Sources */,
 				3DF06F761E05C20100E57022 /* Extensions.swift in Sources */,
+				4CBF5B381E082DDD0032A71C /* DetailsViewController.swift in Sources */,
 				4C0F42E11E01D46A00757347 /* JsonInfoDTO.swift in Sources */,
 				4CA258CB1E04288700748D37 /* LocalDataHandler.swift in Sources */,
 				4CCCD97E1DFF03990030357F /* CategoriesTableViewCell.swift in Sources */,
@@ -610,6 +616,7 @@
 				4C8EFBB41DFB006400CA61A0 /* CategoriesTableViewController.swift in Sources */,
 				4C8EFBBC1DFB03AA00CA61A0 /* NetworkRequestHelper.swift in Sources */,
 				3DF06F771E05C20100E57022 /* Extensions.swift in Sources */,
+				4CBF5B391E082DDD0032A71C /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +638,7 @@
 				4C8EFBB51DFB006400CA61A0 /* CategoriesTableViewController.swift in Sources */,
 				4C8EFBBD1DFB03AA00CA61A0 /* NetworkRequestHelper.swift in Sources */,
 				3DF06F781E05C20100E57022 /* Extensions.swift in Sources */,
+				4CBF5B3A1E082DDD0032A71C /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,7 +783,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Jeff.GrabilityTrial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -792,7 +800,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Jeff.GrabilityTrial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
