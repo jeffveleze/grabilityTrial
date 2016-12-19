@@ -57,6 +57,9 @@
 		4CBF5B381E082DDD0032A71C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF5B371E082DDD0032A71C /* DetailsViewController.swift */; };
 		4CBF5B391E082DDD0032A71C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF5B371E082DDD0032A71C /* DetailsViewController.swift */; };
 		4CBF5B3A1E082DDD0032A71C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF5B371E082DDD0032A71C /* DetailsViewController.swift */; };
+		4CBF5B3C1E0879740032A71C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF5B3B1E0879740032A71C /* SplashViewController.swift */; };
+		4CBF5B3D1E0879740032A71C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF5B3B1E0879740032A71C /* SplashViewController.swift */; };
+		4CBF5B3E1E0879740032A71C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF5B3B1E0879740032A71C /* SplashViewController.swift */; };
 		4CCCD97E1DFF03990030357F /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCD97D1DFF03990030357F /* CategoriesTableViewCell.swift */; };
 		4CCCD97F1DFF03990030357F /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCD97D1DFF03990030357F /* CategoriesTableViewCell.swift */; };
 		4CCCD9801DFF03990030357F /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCD97D1DFF03990030357F /* CategoriesTableViewCell.swift */; };
@@ -116,6 +119,7 @@
 		4CAB07391DFA24CA00E445E7 /* GrabilityTrialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrabilityTrialUITests.swift; sourceTree = "<group>"; };
 		4CAB073B1DFA24CA00E445E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CBF5B371E082DDD0032A71C /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsViewController.swift; path = ../DetailsViewController.swift; sourceTree = "<group>"; };
+		4CBF5B3B1E0879740032A71C /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashViewController.swift; path = ../SplashViewController.swift; sourceTree = "<group>"; };
 		4CCCD97D1DFF03990030357F /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesTableViewCell.swift; path = ../CategoriesTableViewCell.swift; sourceTree = "<group>"; };
 		6CEDD031C4575153066D69DB /* Pods-GrabilityTrialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabilityTrialTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrabilityTrialTests/Pods-GrabilityTrialTests.release.xcconfig"; sourceTree = "<group>"; };
 		91BED0C1DA72F59909F4B4CA /* Pods_GrabilityTrial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrabilityTrial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +177,7 @@
 		4C459C2A1E0061630016EEFF /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				4CBF5B401E0879A80032A71C /* UI */,
 				4C459C281E0058CF0016EEFF /* Cells */,
 				4C459C291E0061490016EEFF /* ViewControllers */,
 			);
@@ -183,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				4C459C2D1E0061820016EEFF /* Cells */,
+				4CBF5B3F1E0879890032A71C /* UI */,
 				4C459C2C1E0061790016EEFF /* ViewControllers */,
 			);
 			name = iPad;
@@ -231,19 +237,10 @@
 		4CAB07151DFA24C900E445E7 /* GrabilityTrial */ = {
 			isa = PBXGroup;
 			children = (
+				4CBF5B411E0879CE0032A71C /* Common */,
 				4C459C2B1E00616A0016EEFF /* iPad */,
 				4C459C2A1E0061630016EEFF /* iPhone */,
-				4CAB07161DFA24C900E445E7 /* AppDelegate.swift */,
-				4C8EFBBA1DFB03AA00CA61A0 /* NetworkRequestHelper.swift */,
-				4C0F42E01E01D46A00757347 /* JsonInfoDTO.swift */,
-				4C0F42E41E01EBE600757347 /* MappedObjects.swift */,
-				4CA258CA1E04288700748D37 /* LocalDataHandler.swift */,
-				3DF06F751E05C20100E57022 /* Extensions.swift */,
-				4CBF5B371E082DDD0032A71C /* DetailsViewController.swift */,
-				4CAB071A1DFA24CA00E445E7 /* Main.storyboard */,
-				4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */,
 				4CAB07201DFA24CA00E445E7 /* Assets.xcassets */,
-				4CAB07221DFA24CA00E445E7 /* LaunchScreen.storyboard */,
 				4CAB07251DFA24CA00E445E7 /* Info.plist */,
 				4CAB071D1DFA24CA00E445E7 /* GrabilityTrial.xcdatamodeld */,
 			);
@@ -266,6 +263,86 @@
 				4CAB073B1DFA24CA00E445E7 /* Info.plist */,
 			);
 			path = GrabilityTrialUITests;
+			sourceTree = "<group>";
+		};
+		4CBF5B3F1E0879890032A71C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4C459C1C1E004C9C0016EEFF /* MainIPad.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		4CBF5B401E0879A80032A71C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4CAB071A1DFA24CA00E445E7 /* Main.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		4CBF5B411E0879CE0032A71C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4CBF5B471E087AFC0032A71C /* UI */,
+				4CBF5B451E087A790032A71C /* DataHandlers */,
+				4CBF5B441E087A000032A71C /* Business Logic */,
+				4CBF5B431E0879F00032A71C /* General */,
+				4CBF5B421E0879D90032A71C /* ViewControllers */,
+				4CBF5B461E087ADA0032A71C /* Others */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		4CBF5B421E0879D90032A71C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4CBF5B3B1E0879740032A71C /* SplashViewController.swift */,
+				4CBF5B371E082DDD0032A71C /* DetailsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4CBF5B431E0879F00032A71C /* General */ = {
+			isa = PBXGroup;
+			children = (
+				4CAB07161DFA24C900E445E7 /* AppDelegate.swift */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		4CBF5B441E087A000032A71C /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				4C0F42E41E01EBE600757347 /* MappedObjects.swift */,
+				4C8EFBBA1DFB03AA00CA61A0 /* NetworkRequestHelper.swift */,
+			);
+			name = "Business Logic";
+			sourceTree = "<group>";
+		};
+		4CBF5B451E087A790032A71C /* DataHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				4CA258CA1E04288700748D37 /* LocalDataHandler.swift */,
+				4C0F42E01E01D46A00757347 /* JsonInfoDTO.swift */,
+			);
+			name = DataHandlers;
+			sourceTree = "<group>";
+		};
+		4CBF5B461E087ADA0032A71C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				3DF06F751E05C20100E57022 /* Extensions.swift */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		4CBF5B471E087AFC0032A71C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4CAB07221DFA24CA00E445E7 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 		4F9FB837DEBBF1FE0F90BFD5 /* Pods */ = {
@@ -582,6 +659,7 @@
 				4C8EFBBB1DFB03AA00CA61A0 /* NetworkRequestHelper.swift in Sources */,
 				4C0F42D91E01960C00757347 /* AppsCollectionViewCell.swift in Sources */,
 				4C0F42E51E01EBE600757347 /* MappedObjects.swift in Sources */,
+				4CBF5B3C1E0879740032A71C /* SplashViewController.swift in Sources */,
 				4C459C251E0058BA0016EEFF /* CategoriesCollectionViewCell.swift in Sources */,
 				4CAB071F1DFA24CA00E445E7 /* GrabilityTrial.xcdatamodeld in Sources */,
 				4C459C2F1E0096FF0016EEFF /* AppsTableViewController.swift in Sources */,
@@ -617,6 +695,7 @@
 				4C8EFBBC1DFB03AA00CA61A0 /* NetworkRequestHelper.swift in Sources */,
 				3DF06F771E05C20100E57022 /* Extensions.swift in Sources */,
 				4CBF5B391E082DDD0032A71C /* DetailsViewController.swift in Sources */,
+				4CBF5B3D1E0879740032A71C /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,6 +718,7 @@
 				4C8EFBBD1DFB03AA00CA61A0 /* NetworkRequestHelper.swift in Sources */,
 				3DF06F781E05C20100E57022 /* Extensions.swift in Sources */,
 				4CBF5B3A1E082DDD0032A71C /* DetailsViewController.swift in Sources */,
+				4CBF5B3E1E0879740032A71C /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

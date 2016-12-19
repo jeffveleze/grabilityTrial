@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SystemConfiguration
 import Alamofire
 import ObjectMapper
 import AlamofireObjectMapper
@@ -43,6 +44,19 @@ class NetworkRequestHelper: NSObject {
             }
             
         }
+    }
+    
+    func isConnectionAvailble()->Bool{
+        
+        let rechability = SCNetworkReachabilityCreateWithName(kCFAllocatorDefault, "www.google.com")
+        var flags : SCNetworkReachabilityFlags = SCNetworkReachabilityFlags()
+        if SCNetworkReachabilityGetFlags(rechability!, &flags) == false {
+            return false
+        }
+        let isReachable = (flags.rawValue & UInt32(kSCNetworkFlagsReachable)) != 0
+        let needsConnection = (flags.rawValue & UInt32(kSCNetworkFlagsConnectionRequired)) != 0
+        
+        return (isReachable && !needsConnection)
     }
     
 
