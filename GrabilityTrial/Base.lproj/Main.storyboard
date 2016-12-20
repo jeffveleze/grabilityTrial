@@ -30,7 +30,7 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNf-jT-Q54">
                                             <rect key="frame" x="0.0" y="0.0" width="25" height="43"/>
-                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFg-Ks-2qH">
                                             <rect key="frame" x="25" y="0.0" width="768" height="43.5"/>
@@ -38,11 +38,11 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CL0-IN-4dH">
                                                     <rect key="frame" x="10" y="11" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.97715714009999999" green="1" blue="0.98249913440000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="CL0-IN-4dH" firstAttribute="centerY" secondItem="nFg-Ks-2qH" secondAttribute="centerY" id="ATK-L4-lw7"/>
                                                 <constraint firstItem="CL0-IN-4dH" firstAttribute="leading" secondItem="nFg-Ks-2qH" secondAttribute="leading" constant="10" id="uCH-Bk-duT"/>
@@ -50,7 +50,7 @@
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GCM-ch-w41">
                                             <rect key="frame" x="793" y="0.0" width="198" height="43.5"/>
-                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.99615384615384617" green="0.99615384615384617" blue="0.99615384615384617" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -86,7 +86,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vtL-gm-JBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1763" y="93"/>
+            <point key="canvasLocation" x="1762.5" y="92.96875"/>
         </scene>
         <!--Apps Table View Controller-->
         <scene sceneID="P98-fd-src">
@@ -105,10 +105,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8f3-cg-2n6">
-                                            <rect key="frame" x="0.0" y="0.0" width="149.5" height="69.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="148.5" height="69.5"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R5t-uU-LMk">
-                                                    <rect key="frame" x="79" y="2" width="65.5" height="65.5"/>
+                                                    <rect key="frame" x="78" y="2" width="65.5" height="65.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="R5t-uU-LMk" secondAttribute="height" multiplier="1:1" id="0Y9-1q-w0U"/>
                                                     </constraints>
@@ -122,7 +122,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ic-mN-pxj">
-                                            <rect key="frame" x="149.5" y="0.0" width="792" height="69.5"/>
+                                            <rect key="frame" x="148.5" y="0.0" width="793" height="69.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Iy-W2-9xH">
                                                     <rect key="frame" x="10" y="1" width="42" height="21"/>
