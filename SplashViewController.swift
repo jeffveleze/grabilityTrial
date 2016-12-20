@@ -11,6 +11,7 @@ import UIKit
 class SplashViewController: UIViewController {
     
     var networkHelper = NetworkRequestHelper()
+    var localDataHandler = LocalDataHandler()
     
     @IBOutlet var logo: UIImageView!
     @IBOutlet var name: UILabel!
@@ -18,10 +19,6 @@ class SplashViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //set up the UI
-        
-
 
     }
 
@@ -35,30 +32,24 @@ class SplashViewController: UIViewController {
         
         self.logo.image = #imageLiteral(resourceName: "iTunes")
         self.name.text = "iTunes Store: Top Free Apps"
-        // Dissapear elements from main window to animate later
-        self.logo.center.y -= view.bounds.height
-        self.name.center.y -= view.bounds.height
-        self.logo.center.x -= view.bounds.width
-        self.name.center.x -= view.bounds.width
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        // Move TextField
-        UIView.animate(withDuration: 0.5, delay: 1.0, options: [], animations: {
-            self.logo.center.x += self.view.bounds.width
-        }, completion: nil)
-        
-        // Move TextField
-        UIView.animate(withDuration: 0.5, delay: 1.5, options: [], animations: {
-            self.name.center.x += self.view.bounds.width
-        }, completion: nil)
-        
         rotateViewToRight(self.logo, duration: 2.0, delay: 0.0)
 
-
+        // Expand and Shrink Title
+        UIView.animate(withDuration: 1.0, delay: 0.0, options: [.curveEaseInOut], animations: {
+            
+            self.name.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+            
+        }) { finish in
+            UIView.animate(withDuration: 0.6, animations: {
+                self.name.transform = CGAffineTransform.identity
+            })
+        }
+        
     }
     
     func rotateViewToRight(_ image: UIImageView, duration: Double, delay: Double){
@@ -89,11 +80,40 @@ class SplashViewController: UIViewController {
             })
         }, completion: {finished in
             // any code entered here will be applied once the animation has completed
+            sleep(2)
+            self.checkIfMayGoToNextView()
         })
         
     }
+    
+    func checkIfMayGoToNextView(){
+        if(self.networkHelper.isConnectionAvailble()){
+            self.performSegue(withIdentifier: "showCategories", sender: nil)
+        }else{
+            if(self.localDataHandler.fileWasSaved()){
+                self.performSegue(withIdentifier: "showCategories", sender: nil)
+            }else{
+                self.handleAlertView()
+            }
+        }
+    }
 
-
+    func handleAlertView(){
+        
+        let alert = UIAlertController(title: "Alerta", message: "Necesitas una conexión a internet al menos la primera vez que uses la app. Asegúrate de tener una y presiona reintentar", preferredStyle: UIAlertControllerStyle.alert)
+        self.present(alert, animated: true, completion: nil)
+        alert.addAction(UIAlertAction(title: "Reintentar", style: .default, handler: { action in
+            switch action.style{
+            case .default:
+                print("default")
+                self.checkIfMayGoToNextView()
+            case .cancel:
+                print("cancel")
+            case .destructive:
+                print("destructive")
+            }
+        }))
+    }
 
     /*
     // MARK: - Navigation

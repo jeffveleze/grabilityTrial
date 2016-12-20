@@ -90,6 +90,7 @@ class CategoriesTableViewController: UITableViewController, DataSyncronizedProto
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CategoriesTableViewCell
         let category = self.categories[indexPath.row]
         cell.categoryName.text = category
+        cell.backgroundColor = UIColor.black
 
         return cell
     }

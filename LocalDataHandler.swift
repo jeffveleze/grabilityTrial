@@ -38,4 +38,18 @@ class LocalDataHandler: NSObject {
         return readString
     }
     
+    func saveFileStatus(savingStatus: Bool) {
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(savingStatus, forKey: "isDataSaved")
+    
+        //Save the changes
+        userDefaults.synchronize()
+    }
+    
+    func fileWasSaved()-> Bool{
+        let userDefaults = UserDefaults.standard
+        let dataIsSaved = userDefaults.object(forKey: "isDataSaved")
+        return (dataIsSaved != nil)
+    }
+    
 }

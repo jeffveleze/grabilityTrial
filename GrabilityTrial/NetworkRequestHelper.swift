@@ -31,6 +31,7 @@ class NetworkRequestHelper: NSObject {
                 if response.result.value != nil {
                     JsonInfoDTO.sharedJsonInfoDTO.jsonMap = response.result.value
                     self.localDataHandler.saveFile(jsonToSave: response.result.value!)
+                    self.localDataHandler.saveFileStatus(savingStatus: true)
                     self.delegate?.dataSyncronized()
                 } else {
                     print("Request Error")
